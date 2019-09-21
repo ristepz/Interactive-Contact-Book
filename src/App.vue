@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <Card @oncardvalue="writeCardVal" />
+    <Card @oncardvalue="writeCardVal" :val="cardValue" v-if="showCard" />
     {{cardValue}}
+    <button @click="showCard = false">Set Card Value</button>
   </div>
 </template>
 
@@ -11,11 +12,12 @@ export default {
   name: "app",
   data() {
     return {
-      cardValue: ''
+      cardValue: "",
+      showCard: true
     };
   },
-  methods:{
-    writeCardVal(v){
+  methods: {
+    writeCardVal(v) {
       this.cardValue = v;
     }
   },
