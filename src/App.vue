@@ -1,26 +1,26 @@
 <template>
   <div id="app">
+    <Card @oncardvalue="writeCardVal" />
+    {{cardValue}}
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import Card from "./components/Card";
 export default {
   name: "app",
+  data() {
+    return {
+      cardValue: ''
+    };
+  },
+  methods:{
+    writeCardVal(v){
+      this.cardValue = v;
+    }
+  },
   components: {
-    HelloWorld
+    Card
   }
 };
 </script>
-
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

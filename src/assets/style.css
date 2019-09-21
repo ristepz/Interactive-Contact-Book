@@ -1,0 +1,209 @@
+/*
+* Global stylesa
+*/
+
+html, body, #app {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #909090 url("./app-bg.jpg") center center no-repeat;
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    background-attachment: fixed;
+    font-size: 16px;
+}
+
+#app {
+    display: flex;
+}
+
+div.contacts-area {
+    flex: 1 1;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+}
+
+h2.page-title {
+    color: #fff;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 60px !important;
+    padding: 20px;
+    background: rgba(84, 84, 84, 0.4);
+}
+
+/*
+* Nav style
+*/
+
+div.cnav {
+    height: 100%;
+    background: rgba(69, 69, 69, 0.6);
+    -webkit-box-shadow: 3px 0px 8px 0px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 3px 0px 8px 0px rgba(0, 0, 0, 0.54);
+    box-shadow: 3px 0px 8px 0px rgba(0, 0, 0, 0.54);
+    flex-basis: 250px;
+}
+
+div.cnav h3.logo {
+    color: #fff;
+    font-weight: 100;
+    font-size: 22px;
+    margin: 5px 0 76px 0;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+div.cnav h3.logo i {
+    font-size: 45px;
+    transform: translateY(8px);
+    padding-right: 10px;
+    color: #fff;
+}
+
+div.cnav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.cnav ul li {
+    display: block;
+}
+
+div.cnav ul li a {
+    display: block;
+    background: #1f1f1f;
+    color: #fff;
+    padding: 20px 0 20px 10px;
+    border-bottom: 4px #454545 solid;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+div.cnav ul li a:hover {
+    text-decoration: none;
+    background: #0362b1;
+    padding: 20px 0 20px 20px;
+}
+
+div.cnav ul li a i {
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+/*
+* Forms
+*/
+
+div.inner-row {
+    margin-bottom: 20px;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    border-right: 15px solid transparent;
+}
+
+div.inner-row.full-width {
+    float: none !important;
+    width: 100%;
+}
+
+div.inner-row:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+div.inner-row input[type="text"], div.inner-row input[type="email"], div.inner-row select, div.inner-row textarea {
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    outline: none !important;
+    background: rgba(32, 32, 32, 0.8);
+    border: none;
+    color: #fff;
+    transition: background 0.5s ease;
+}
+
+div.inner-row textarea {
+    height: 100px;
+}
+
+div.inner-row input[type="text"]:focus, div.inner-row input[type="email"]:focus, div.inner-row textarea:focus {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+div.inner-row input[type="button"] {
+    background: rgba(32, 32, 32, 0.8);
+    color: #fff;
+    border: none;
+    padding: 18px 36px;
+    font-size: 14px;
+    font-weight: 100;
+    transition: all 0.5s ease-in-out;
+}
+
+div.inner-row input[type="button"]:hover {
+    background: #0362b1;
+}
+
+div.inner-row div.file-input {
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+div.inner-row div.file-input input[type="file"] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+div.inner-row div.file-input label {
+    background: rgba(32, 32, 32, 0.8);
+    border: none;
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+div.inner-row div.file-input label:hover {
+    background: #0362b1;
+}
+
+div.inner-row div.file-input label i {
+    font-size: 30px;
+    padding-right: 6px;
+}
+
+div.form-row.full-width input[type="text"], div.form-row.full-width input[type="email"], div.form-row.full-width textarea {
+    width: 100% !important;
+}
