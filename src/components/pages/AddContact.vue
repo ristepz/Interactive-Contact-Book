@@ -49,7 +49,7 @@ export default {
           value: "",
           is: "UploadImage"
         },
-        description: { placeholder: "Description", value: "", is: "TextArea", expanded: "true" }
+        description: { placeholder: "Description", value: "", is: "TextArea", expanded: true }
       }
     };
   },
