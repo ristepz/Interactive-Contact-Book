@@ -373,3 +373,10 @@ div.search input[type='search']{
     box-sizing: border-box;
     padding: 0 0 0 15px;
 }
+
+@media all and (max-width: 720px){
+    div.inner-row {
+        float: none;
+        width: 100%;
+    }
+}

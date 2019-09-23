@@ -10,7 +10,7 @@
         </router-link>
       </li>
       <li>
-        <router-link to="contacts">
+        <router-link to="/contacts">
           <i class="fas fa-user-friends"></i> All Contacts
         </router-link>
       </li>

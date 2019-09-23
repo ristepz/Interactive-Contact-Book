@@ -47,7 +47,7 @@ app.post('/addContact', (req, resp) => {
 });
 
 /**
- * Add new contact endpoint
+ * Get contact by id endpoint
  */
 app.get('/contact/:id', (req, resp) => {
   DB.get(`SELECT * FROM contacts WHERE id=?`, [req.params.id], (err, row) => {
@@ -86,7 +86,7 @@ app.delete('/contact/:id', (req, resp) => {
 });
 
 /**
- * Delete contact endpoint
+ * Search contacts by first name and last name endpoint
  */
 app.get('/search/:term', (req, resp) => {
   DB.all("SELECT * FROM contacts WHERE firstName LIKE ?1 OR lastName LIKE ?1",

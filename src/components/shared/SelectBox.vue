@@ -1,12 +1,11 @@
 <template>
   <div class="inner-row">
-    <select>
+    <select @change="sendVal">
       <option value>{{placeholder}}</option>
-      <option v-for="(country, index) in data" 
-      :selected="country.label === value"
+      <option v-for="(opt, index) in data" 
+      :selected="opt.label === value"
       :key="`option-${index}`"
-      @change="sendVal"
-      :value="country.label">{{country.label}}</option>
+      :value="opt.label">{{opt.label}}</option>
     </select>
   </div>
 </template>
