@@ -9,8 +9,12 @@
 import axios from "axios";
 export default {
   data() {
-    return {};
+    return {
+        contactId: -1
+    };
   },
-  created() {}
+  created() {
+      this.contactId = this.$route.params.id;
+  }
 };
 </script>

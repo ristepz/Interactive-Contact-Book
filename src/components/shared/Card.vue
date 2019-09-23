@@ -35,7 +35,7 @@
             {{contact.mobilePhone}}
           </li>
         </ul>
-        <span class="delete-contact" @click="removeContact">{{deleteText}}</span>
+        <span class="delete-contact" @click.stop="removeContact">{{deleteText}}</span>
       </div>
     </div>
   </div>

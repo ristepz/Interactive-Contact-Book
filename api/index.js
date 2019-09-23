@@ -24,16 +24,16 @@ app.get('/', (req, resp) => {
  */
 app.post('/addContact', (req, resp) => {
   const firstName = req.body.firstName;
-  const lastName = req.body.firstName;
-  const email = req.body.firstName;
-  const address = req.body.firstName;
-  const company = req.body.firstName;
-  const profession = req.body.firstName;
-  const homePhone = req.body.firstName;
-  const mobilePhone = req.body.firstName;
-  const country = req.body.firstName;
-  const image = req.body.firstName;
-  const description = req.body.firstName;
+  const lastName = req.body.lastName;
+  const email = req.body.email;
+  const address = req.body.address;
+  const company = req.body.company;
+  const profession = req.body.proffession;
+  const homePhone = req.body.homePhone;
+  const mobilePhone = req.body.mobilePhone;
+  const country = req.body.country;
+  const image = req.body.uploadImage;
+  const description = req.body.description;
   DB.run(`
       INSERT INTO contacts(firstName, lastName, email, address, company, profession, homePhone, mobilePhone, country, image, description)
       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
